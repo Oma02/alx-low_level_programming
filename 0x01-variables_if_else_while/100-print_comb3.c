@@ -6,19 +6,21 @@
 
 int main(void)
 {
-	int n;
+	int n, m;
 	
-	for (n = '0'; n < 100; n++)
+	for (n = 48; n <= 56; n++)
 	{
-		if (n / 10 < n % 10)
+		for (m = 49; m <= 57; m++)
 		{
-			putchar('0' + (n / 10));
-			putchar('0' + (n % 10));
-
-			if (n < 89)
+			if (m > n)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(n);
+				putchar(m);
+				if (n != 56 || n != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
