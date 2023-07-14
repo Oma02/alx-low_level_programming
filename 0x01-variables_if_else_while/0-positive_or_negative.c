@@ -3,8 +3,7 @@
 #include <stdio.h>
 
 /**
- * A program that assigns a number to a variable
- * main - Entry point
+ * main -  A program that assigns a number to a variable
  * Return: 0 (Succeded)
  */
 
@@ -20,5 +19,5 @@ int main(void)
 		printf("%d is zero\n", n);
 	else
 		printf("%d is negative\n", n);
-	return 0;
+	return (0);
 }
