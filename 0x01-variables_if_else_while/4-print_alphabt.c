@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - A prigram that prints alphabets
+ * main - A program that prints alphabets
  * Return: 0 (Succeded)
  */
 
@@ -9,9 +9,10 @@ int main(void)
 	char c;
 
 	c = 'a';
-	while (c <= 'z' && c != 'q' && c != 'e')
+	while (c <= 'z')
 	{
-		putchar(c);
+		if (c != 'q' && c != 'e')
+			putchar(c);
 		c++;
 	}
 	putchar('\n');
